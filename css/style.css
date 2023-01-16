@@ -1,0 +1,312 @@
+body{
+  font-family: 'Noto Sans' sans-serif;
+  font-size: 20px;
+  background-color: #fff;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+/* Общие */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.nav{
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+}
+
+.logo{
+  color: #151515;
+  text-decoration: none;
+  font-size: 30px;
+  margin: auto 0 auto 20px;
+  font-weight: bold;
+}
+
+.menu{
+  position: relative;
+  display:inline-flex;
+  right: 0;
+  padding: 10px 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+.menu li{
+  list-style: none;
+  float: right;
+  margin: 0 10px 0 0;
+  padding: 15px 15px 10px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 30px;
+  transition: 0.1s;
+}
+
+.menu li:last-child{
+  margin: 0;
+}
+
+.menu li a{
+  color: #151515;
+  text-decoration: none;
+}
+
+.menu li:hover{
+  background: #FFE472;
+}
+
+/* Главная ................................................*/
+.baner{
+  background-color: #FFCF00;
+  display: inline-flex;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.img1{
+  padding: 50px;
+}
+
+.main-text{
+  text-align: center;
+  font-size: 30px;
+  margin: auto 150px;
+}
+
+/* Калькулятор ................................................*/
+.calculator{
+  text-align: center;
+  font-size: 30px;
+  margin: auto 150px;
+}
+
+.field{
+  display: flex;
+  margin: auto;
+  font-weight: normal;
+}
+
+.img2{
+  padding: 100px;
+}
+
+#n1, #n2, #out{
+  border: 0;
+  border-radius: 2px;
+  height: 40px;
+  font-size: 30px;
+  font-family: 'Noto Sans';
+  font-weight: bold;
+}
+
+.buttons{
+  display: flex;
+}
+
+.button-calculator{
+  width: 50px;
+  height: 50px;
+  background: #333;
+  color: #fff;
+  font-size: 30px;
+  border: 0;
+  border-radius: 50px;
+  margin: 30px auto;
+}
+
+#out{
+  background-color: #fff;
+}
+
+.button-calculator:hover{
+  background-color: #6F6E6E;
+}
+
+#button-equal:hover{
+  background-color: #333;
+}
+
+/* Динозавр............................................... */
+.game{
+  width: 1000px;
+  height: 400px;
+  border-bottom: 3px solid #000;
+  margin: auto;
+}
+
+#dino{
+  width: 90px;
+  height: 90px;
+  background-image: url(../pic/dino/dj.png);
+  background-size: 90px 90px;
+  position: relative;
+  top: 310px;
+  left: 50px;
+}
+
+#cactus{
+  width: 50px;
+  height: 65px;
+  background-image: url(../pic/dino/cactus.png);
+  background-size: 50px 65px;
+  position: relative;
+  top: 245px;
+  left: 950px;
+  animation: cuctus-movement 1.5s infinite linear;
+}
+
+@keyframes cuctus-movement {
+  0%{
+    left: 950px;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.jump{
+  animation: jump 0.4s linear;
+}
+
+@keyframes jump {
+  0%{top: 310px}
+  30%{top: 120px}
+  50%{top: 100px}
+  80%{top: 120px}
+  100%{top: 310px}
+}
+
+/*Конструктор персонажа................................*/
+.baner-emoji{
+  display: flex;
+  background-color: #FFCF00;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+.emoji{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.emoji img{
+  width: 50%;
+  padding: 40px;
+  cursor: pointer;
+}
+
+#cry{
+  padding: 45px;
+}
+
+#avatar{
+  margin: auto;
+}
+
+#avatar img{
+  width: 256px;
+}
+
+.age{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 80px;
+  width: 30%;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #151515;
+}
+
+.age b{
+  margin: auto;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.choose-age{
+  color: #FFCF00;
+}
+
+/*Каталог...............................*/
+.catalog{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.menu-catalog{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 20px;
+  background-color: #FFCF00;
+  border-radius: 20px;
+}
+
+.menu-catalog b{
+  margin: 10px 5px;
+  font-size: 30px;
+}
+
+
+.menu-catalog a{
+  text-decoration: none;
+  margin: 10px 5px;
+  color:#333;
+}
+
+.menu-catalog a:last-child{
+  margin-bottom: 0;
+}
+
+.menu-catalog a:hover{
+  color: #fff;
+}
+.lenta-catalog{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  width: 80%;
+  position: absolute;
+  left: 30%;
+}
+
+.sticker{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 20px;
+  width: calc(960px/3 - 20px * 2);
+}
+
+#a20{
+  display: flex;
+}
+
+#a40{
+  display: none;
+}
+
+#a60{
+  display: none;
+}
+
+#a80{
+  display: none;
+}
