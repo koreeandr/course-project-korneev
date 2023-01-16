@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Калькулятор</title>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="logo" href="index.html">Интернет-технологии</a>
+      <ul class="menu">
+        <li> <a href="index.html">Главная</a></li>
+        <li> <a href="catalog.html">Не главная</a></li>
+        <li> <a href="constructor.html">Конструктор</a></li>
+        <li> <a href="calculator.html">Калькулятор</a></li>
+        <li> <a href="dino.html">Динозавр</a></li>
+        </ul>
+    </nav>
+  </div>
+</header>
+    
+<main class="main">
+    <div class="container">
+      <div class="baner">
+        <div class="calculator">
+          <p class="field"><input type="text" name="name" id="n1"></p>
+          <div class="buttons">
+            <button onclick="plus()" class="button-calculator" type="button">+</button>
+            <button onclick="minus()" class="button-calculator" type="button">-</button>
+            <button onclick="multi()" class="button-calculator" type="button">x</button>
+            <button onclick="division()" class="button-calculator" type="button">/</button>
+          </div>
+          <p class="field"><input type="text" name="name" id="n2"></p>
+          <button class="button-calculator" id="button-equal" type="button" name="button">=</button>
+          <p class="field" id="out"></p>
+        </div>
+        <img class="img2" src="pic\calculator\hm.png" alt="стикер">
+      </div>
+    </div>
+</main>
+
+<script src="js\script.js"></script>
+</body>

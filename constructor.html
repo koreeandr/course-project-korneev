@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Конструктор персонажа</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+        <a class="logo" href="index.html">Интернет-технологии</a>
+        <ul class="menu">
+            <li> <a href="index.html">Главная</a></li>
+            <li> <a href="catalog.html">Не главная</a></li>
+            <li> <a href="constructor.html">Конструктор</a></li>
+            <li> <a href="calculator.html">Калькулятор</a></li>
+            <li> <a href="dino.html">Динозавр</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+      
+<main class="main">
+    <div class="container">
+        <div class="baner-emoji">
+            <div class="emoji">
+                <img onclick="fury0()" id="fury" src="pic\constructor\0.gif" alt="fury">
+                <img onclick="cry1()" id="cry" src="pic\constructor\1.gif" alt="cry">
+                <img onclick="fear2()" id="fear" src="pic\constructor\2.gif" alt="fear">
+                <img onclick="haha3()" id="haha" src="pic\constructor\3.gif" alt="haha">
+            </div>
+            <div id="avatar"></div>
+            <div class="age">
+                <b id="ca20" onclick="a20()">20</b>
+                <b id="ca40" onclick="a40()">40</b>
+                <b id="ca60" onclick="a60()">60</b>
+                <b id="ca80" onclick="a80()">80</b>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="js\script.constructor.js"></script>
+</body>
